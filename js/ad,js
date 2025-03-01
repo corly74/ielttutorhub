@@ -1,0 +1,80 @@
+var scrollToPos, submitForm;
+var gatag = function () { };
+
+
+// <!-- Google Tag Manager -->
+
+(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-KFTGXVL');
+
+
+// <!-- W fingerprint system -->
+
+var _wfk = 'aQrdjfLOt4C7R';
+var _wfd = 'ielts7online.com';
+
+(function () {
+    var wfp = document.createElement('script');
+    wfp.type = 'text/javascript';
+    wfp.async = true;
+    wfp.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'fpapi.ieltstaipei.com/l.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wfp, s);
+})();
+
+
+
+
+
+
+
+
+
+var banner2 = document.querySelector("#promo-banner"), _bs;
+_bs = setTimeout(function () {
+    banner2.classList.add('shrink');
+}, 3000);
+banner2.style.cursor = "pointer";
+banner2.addEventListener("click", function () {
+    window.ajax.post(
+        window.fps.apihost + "/fpapi.php",
+        {
+            d: window._wfd,
+            k: window._wfk,
+            fp: window.fps.uhash,
+            cp: window.fps.components,
+            ua: window.fps.userAgentMinusVersion,
+            s: window.fps.s || "",
+            gi: window.fps.gcid || "",
+            refer: document.referrer,
+            href:
+                window.location.href +
+                "?utm_source=ielts7online_new_ad&utm_campaign=ielts_promo&utm_medium=banner_ielts_go&utm_content=" +
+                window.fps.fpid
+        },
+        function (n) {
+            var code_cont = document.querySelector("#promo_code");
+            code_cont.innerHTML = "IA" + window.fps.fpid;
+            console.log(window.fps.fpid);
+        }
+    );
+});
+// banner close button
+var banner2_close = document.createElement('A');
+banner2_close.innerHTML = "X";
+banner2_close.setAttribute('style', 'position:absolute;top:0;right:0;z-index:1001;color:#000;font-family:Arial;');
+banner2_close.setAttribute('id', 'promo-banner-close');
+banner2_close.addEventListener('click', function (e) {
+    console.log('banner2_close');
+    console.log(e.currentTarget);
+    console.log(e.target);
+    banner2.style.display = 'none';
+    e.stopPropagation();
+});
+// banner2.appendChild(banner2_close);

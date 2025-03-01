@@ -1,0 +1,104 @@
+// slider bannar 
+// 幻燈片
+
+@import "variables";
+
+.bg-light-grey{
+    background-color: rgb(240, 235, 235);
+}
+
+.header-menu{
+    position: fixed; 
+    max-height: auto; 
+    z-index: 100;
+    width: 100vw;
+    text-align:center;
+    margin-top: -20px;
+}
+
+
+
+.kv-banner {
+    padding-top: 60px;
+
+
+    @media(max-width:$pad) {
+        overflow: hidden;
+     
+	}
+    @media(max-width:425px) {
+        padding-top: 10px;
+     
+	}
+
+    @media(max-width:$mobile_xl) {
+        padding-top: 14vh;
+     
+	}
+
+}
+
+@mixin bannar_position{
+    position: absolute;
+    z-index: 10;
+}
+
+.bannar-1 {
+
+    @include bannar_position;
+    right: 23vw;
+    top: 20vh;
+    font-size: 52px;
+
+    @media (max-width:$lapto_x){
+        @include bannar_position;
+        right: 100px;
+        top: 90px;
+        font-size: 52px;
+    }
+
+    @media(max-width:$pad){
+        @include bannar_position;
+        right: 0px;
+        top: 90px;
+        font-size: 36px;
+    }
+
+    @media(max-width:460px){
+        @include bannar_position;  
+        top: 120px;
+    }
+
+    @media(max-width:$mobile_xl){
+        @include bannar_position; 
+        right: 15px;
+        top: 18vh;
+        font-size: 32px;
+    }
+    @media(max-width:$iphone_plus){
+        @include bannar_position;   
+        top: 16vh;
+    }
+    @media (max-width:$pixel2) {
+        @include bannar_position; 
+        right: 0vw;
+        top: 15vh;
+    }
+
+    @media(max-width:$mobile_m){
+        @include bannar_position; 
+        right: 2vw;
+        top: 16vh;
+        font-size: 28px;
+    }
+    @media (max-width:$galaxy) {
+    @include bannar_position; 
+    top:17vh;
+    }
+    @media(max-width:$mobile_s){
+        @include bannar_position; 
+        right: 10px;
+        top:17vh;
+        font-size: 26px;
+    }
+}

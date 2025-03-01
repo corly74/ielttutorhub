@@ -1,0 +1,24 @@
+
+
+$laptop_xl:1440px;
+$lapto_x:1024px;
+$pad:768px;
+$mobile_xl:426px;
+$iphone_plus:414px;
+$pixel2:412px;
+$mobile_m:376px;
+$galaxy:360px;
+$mobile_s:320px;
+
+@mixin rwd($width){
+
+	@media (max-width:$width) {
+		@content;
+     
+	}
+}
+
+$AquaBlue:#0080c9;
+
+
+

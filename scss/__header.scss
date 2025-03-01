@@ -1,0 +1,88 @@
+// top menu show the worke time and contact news
+// top menu標記公司聯絡資訊以及上班時間
+
+@import "variables";
+
+.logo{
+    left: -13vw;
+    top: -1.3vh;
+    @media (max-width:$laptop_xl) {
+    left: -8vw; }
+    @media (max-width:$lapto_x) {
+    left: 28vw;    
+    }
+    @media (max-width:$pad) {
+    left: 71vw;      
+    }
+    @media (max-width:$mobile_xl){
+    left: 231vw;        
+    }
+    @media(max-width:$pixel2){
+    left: 241vw;    
+    }
+    @media(max-width:$mobile_m){
+    left: 271vw;    
+    }
+    @media(max-width:$galaxy){
+    left: 281vw;    
+    }
+    @media (max-width:$mobile_s) {
+    left: 324vw;      
+    }
+}
+
+.top-news{
+
+    @media (max-width:$laptop_xl) {
+    margin-left: 5rem;
+    }
+    @media (max-width:$lapto_x){
+    margin-left: 31rem;
+    width: 47%;
+
+    }
+
+    @media (max-width:$pad){
+    margin-left: 47rem;
+    width: 37%;
+    }
+
+    @media (max-width:$mobile_xl){
+    // margin-left: 55rem;
+    // width: 32%;
+    // margin-top: 10vh;
+    visibility: hidden;
+    }
+}
+
+.topbar {
+    font-size: 12px;
+    letter-spacing: 1.5px
+}
+
+
+.top-bar-width {
+    min-width: 1300px;
+}
+
+.ml-s{
+    margin-left: 1.5rem;
+
+    @media(max-width:$laptop_xl){
+
+        margin-left: 0;
+    }
+}
+.weekicon{
+
+    @media(max-width:$laptop_xl){
+    margin-left: 1vw;    
+    }
+    @media (max-width:$lapto_x){
+    margin-left: 0vw;
+    }
+
+}
+
+
+

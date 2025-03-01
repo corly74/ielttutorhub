@@ -1,0 +1,312 @@
+
+// main content , about course
+// 主要內容 關於課程
+
+@import "variables";
+
+
+
+.why_steven {
+
+    margin-top: 200px;
+
+    @media (max-width:$lapto_x){
+        margin-top: 100px;
+    }
+
+    @media(max-width:$pad){
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media(max-width:$mobile_xl){
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    @media(max-width:$mobile_m){
+        margin-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media(max-width:$mobile_s){
+        margin-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.advantage {
+    margin-top: 100px;
+}
+
+.icon {
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, $AquaBlue 0%, #afe1f5 100%);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    animation: spinny 1000ms infinite;
+    position: relative;
+}
+
+.icon-inner {
+    background: rgb(240, 235, 235);
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(5%, 5%);
+}
+
+.advantage_list {
+    position: absolute;
+    line-height: 1.5;
+    margin-top: 9vh;
+    z-index: 5;
+    @media(max-width:$laptop_xl){
+        margin-top: 10vh;
+    }
+
+   
+
+    @media (max-width:$pixel2) {
+        margin-top: 8vh;
+    }
+}
+
+
+
+.mt-big{
+    margin-top: 21vh;
+}
+
+.mt-middle{
+    margin-top: 14vh;
+}
+
+pic-title
+// ABOUT WHYGO
+
+.whygosubtitle {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 5px
+}
+
+.study-center {
+    line-height: 2.5;
+    letter-spacing: 3px;
+
+}
+
+.pic-title{
+
+    margin-top: 10vh; 
+    word-spacing:2;
+}
+
+// Advantage
+.card-section{
+    height:447.19px;
+}
+
+.cover-title{
+    margin-top: 10vh; word-spacing:2;
+}
+
+.button-three {
+    background: linear-gradient(-45deg, $AquaBlue, #afe1f5);
+    background: -o-linear-gradient(135deg, $AquaBlue, #afe1f5);
+    background: linear-gradient(-45deg, $AquaBlue, #afe1f5); 
+}
+
+.btn {
+    font-family: 'Poppins';
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border-radius: 2px;
+    background-size: 400% 400%;
+    color: #FFF;
+    text-transform: uppercase;
+    border: 0;
+    padding: 13px 30px;
+    font-size: 15px;
+    animation: Gradient 10s ease infinite;
+    width: 96%;
+    z-index:10 ;
+
+}
+
+.btn-gradient :hover {
+    background: -webkit-linear-gradient(120deg, #0080c9, #afe1f5);
+    color: rgb(0, 0, 0);
+    animation: Gradient 10s ease infinite;
+  }
+
+
+.btn-mt-s{
+    margin-top: 5.5vh;
+}
+
+.btn-mt-x{
+    margin-top: 8.8vh;
+}
+.cover-title{
+    margin-top: 10vh; word-spacing:2;
+}
+
+.card-style{
+    z-index: 5 !important;
+    // padding-bottom:10px;
+}
+
+.mt-ms{
+    margin-top: 9.5vh;
+}
+
+
+// consultant 顧問
+
+.consulabt-bg{
+    margin-top: 150px;
+    background-color: #DEDEDE;
+    padding-bottom: 50px;
+} 
+
+.whygotitle {
+    font-size: 42px;
+    line-height: 1.5;
+    letter-spacing: 5px
+}
+
+.consulabt-pd{
+    padding: 30px;
+}
+
+.step1,.step2,.step3,.step4{
+    margin-top: -9vh;
+    margin-left: 5vh;
+
+    @media(max-width:$lapto_x)
+    {
+    margin-top: -9vh;
+    margin-left: 3vh;
+    }
+
+    @media(max-width:$pad)
+    
+    {
+    margin-top: -9vh;
+    margin-left: -2vh;   
+    }
+
+    @media (max-width:$mobile_xl) 
+    
+    {
+    margin-top: -9vh;
+    margin-left: 17vh; 
+    }
+
+    @media(max-width:$pixel2)
+    
+    {
+    margin-top: -9vh;
+    margin-left: 13vh;    
+    }
+
+    @media(max-width:$mobile_m)
+    
+    {
+    margin-top: -9vh;
+    margin-left: 13vh;   
+    }
+
+    @media(max-width:$mobile_s)
+    
+    {
+    margin-top: -9vh;
+    margin-left: 9vh;    
+    }
+}
+
+
+
+.text-line {
+    border-bottom: 2px $AquaBlue solid;
+    padding-bottom: 5px;
+}
+
+.plan {
+    @media(max-width:$pad){
+        margin-top: 8vh;
+    }
+
+}
+
+
+// IELTS LEVEL
+.cont {
+    position: relative;
+    width: 50%;
+
+    @media(max-width:$mobile_xl){
+        margin-left: 12vw;
+        margin-top: 20px;
+    }
+}
+
+
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #23385e;
+    overflow: hidden;
+    width: 15vw;
+    height: 0;
+    transition: .5s ease;
+    opacity: 0.8;
+
+    @media(max-width:$mobile_xl){
+        width: 70vw;
+    }
+}
+
+.cont:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.class_img {
+    width: 15vw;
+
+    @media(max-width:$mobile_xl){
+        width: 70vw;
+    }
+}

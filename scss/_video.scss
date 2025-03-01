@@ -1,0 +1,28 @@
+// video componentt & testimonial
+// 影片區塊 & 心得分享
+ 
+
+@import "variables";
+
+
+.video-width{
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+
+
+.whygosubtitle {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 5px
+}
+
+
+.swiper-h {
+    height: 620px;
+
+    @media(max-width:$lapto_x){
+        height: 706px;
+    }
+}
